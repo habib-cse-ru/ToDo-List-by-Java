@@ -18,11 +18,10 @@ public class ToDoListRunner {
             int response = sc.nextInt();
             if (response == 1) { listOne.addTask(todoList);
             } else if (response == 2) { listOne.markDone(todoList);
-            } else if (response == 3) {
+            } else if (response == 3) {listOne.printList(todoList);
             } else if (response == 4) {
-            } else if (response == 5) {
-                break;
-            } else {
+            } else if (response == 5) { System.out.println("Thank You for Using The Application"); break;
+            } else { System.out.println("Not a Valied Input and Try Again.....");
             }
 
         }

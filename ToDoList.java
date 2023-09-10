@@ -42,5 +42,20 @@ public class ToDoList {
         }
 
     }
+    /**
+     * this will remove the done taskes 
+     * @param todoList this the arrayList that containes the toDoList
+     */
+
+    public void removeDoneWorks(ArrayList<StringBuilder> todoList){
+        int counter = 0;
+
+        for(StringBuilder work: todoList){
+            if(work.charAt(1) =='X'){
+                todoList.remove(counter);
+            }
+            counter++;
+        }
+    }
 
 }
